@@ -19,7 +19,6 @@ function Output({ result }) {
 }
 
 function App() {
-  // Uninitialized state will cause Child to error out
   const [ready, setReady] = useState(null);
 
   // Data does't start loading
