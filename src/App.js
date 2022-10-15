@@ -24,11 +24,11 @@ function App() {
   useEffect(() => {
     for (let i = 1; i <= 100; i++) {
       if (i % 3 === 0 && i % 5 === 0) {
-        result.push({ text: "FizzBuzz", colour: "css-fizzbuzz" });
+        result.push({ text: "FizzBuzz", colour: "fizzbuzz-colour" });
       } else if (i % 3 === 0) {
-        result.push({ text: "Fizz", colour: "css-fizz" });
+        result.push({ text: "Fizz", colour: "fizz-colour" });
       } else if (i % 5 === 0) {
-        result.push({ text: "Buzz", colour: "css-buzz" });
+        result.push({ text: "Buzz", colour: "buzz-colour" });
       } else {
         result.push({ text: String(i), colour: "" });
       }
