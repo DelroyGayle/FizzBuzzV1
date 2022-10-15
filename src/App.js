@@ -21,8 +21,6 @@ function Output({ result }) {
 function App() {
   const [ready, setReady] = useState(null);
 
-  // Data does't start loading
-  // until *after* Parent is mounted
   useEffect(() => {
     for (let i = 1; i <= 100; i++) {
       if (i % 3 === 0 && i % 5 === 0) {
@@ -38,8 +36,7 @@ function App() {
     setReady(true); // Indicate that it is ready to Display the Results
   }, []);
 
-  // Solution:
-  // don't render Child until `items` is ready!
+  // don't render until `result` is ready!
   return <div>{ready && <Output result={result} />}</div>;
 }
 
