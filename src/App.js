@@ -36,7 +36,7 @@ function App() {
     setReady(true); // Indicate that it is ready to Display the Results
   }, []);
 
-  // don't render until `result` is ready!
+  // don't render until 'result' is ready!
   return <div>{ready && <Output result={result} />}</div>;
 }
 
